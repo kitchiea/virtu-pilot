@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virtu: Transcend your limits.</title>
+<meta name="description" content="The first platform to serve both people in a pornography-driven betrayal, with verified truth instead of self-reported recovery, and dignity instead of shame.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #E9E8E4;
+    color: #0D1121;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 24px; }
+
+  /* Hero */
+  .hero { padding: 80px 0 56px; text-align: center; }
+  .hero .mark { font-size: 15px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.6; margin-bottom: 24px; }
+  .hero h1 { font-size: 40px; font-weight: 700; line-height: 1.15; margin-bottom: 20px; }
+  .hero p { font-size: 17px; color: rgba(13,17,33,0.7); max-width: 480px; margin: 0 auto; }
+
+  /* Section rhythm */
+  section { padding: 40px 0; border-top: 1px solid #C4C3BE; }
+  section h2 { font-size: 13px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.5; margin-bottom: 20px; }
+
+  /* Problem stats */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .stat { background: #DDDCD8; border: 1px solid #C4C3BE; border-radius: 12px; padding: 18px 14px; text-align: center; }
+  .stat .num { font-size: 22px; font-weight: 700; display: block; margin-bottom: 4px; }
+  .stat .lbl { font-size: 11px; color: rgba(13,17,33,0.6); line-height: 1.3; }
+
+  /* Solution */
+  .solution p { font-size: 16px; margin-bottom: 14px; }
+  .solution p:last-child { margin-bottom: 0; }
+  .solution strong { font-weight: 700; }
+
+  /* Quote */
+  .quote { background: #DDDCD8; border: 1px solid #C4C3BE; border-left: 4px solid #0D1121; border-radius: 12px; padding: 28px; }
+  .quote p { font-size: 17px; font-style: italic; margin-bottom: 16px; }
+  .quote .who { font-size: 13px; font-weight: 700; opacity: 0.7; font-style: normal; }
+
+  /* CTA / pilot form */
+  .cta { text-align: center; }
+  .cta h2 { opacity: 1; color: #0D1121; }
+  .cta .lede { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+  .cta .sub { font-size: 15px; color: rgba(13,17,33,0.65); margin-bottom: 28px; max-width: 440px; margin-left: auto; margin-right: auto; }
+
+  form { max-width: 400px; margin: 0 auto; }
+  .field-row { display: flex; flex-direction: column; gap: 12px; }
+  input[type="email"] {
+    width: 100%; padding: 14px 16px; font-size: 15px; border-radius: 10px;
+    border: 1px solid #C4C3BE; background: #DDDCD8; color: #0D1121; font-family: inherit;
+  }
+  input[type="email"]::placeholder { color: rgba(13,17,33,0.4); }
+  input[type="email"]:focus { outline: 2px solid #0D1121; outline-offset: 2px; }
+
+  button[type="submit"] {
+    width: 100%; padding: 14px 16px; font-size: 15px; font-weight: 700;
+    border-radius: 10px; border: none; background: #0D1121; color: #E9E8E4;
+    cursor: pointer; font-family: inherit;
+  }
+  button[type="submit"]:hover { opacity: 0.9; }
+  button[type="submit"]:disabled { opacity: 0.5; cursor: default; }
+
+  .role-select { display: flex; gap: 8px; margin-bottom: 4px; }
+  .role-option { flex: 1; }
+  .role-option input { display: none; }
+  .role-option label {
+    display: block; text-align: center; padding: 10px 8px; font-size: 13px;
+    border: 1px solid #C4C3BE; border-radius: 10px; cursor: pointer; color: rgba(13,17,33,0.6);
+  }
+  .role-option input:checked + label { border-color: #0D1121; color: #0D1121; font-weight: 700; background: #E9E8E4; }
+
+  .form-note { font-size: 12px; color: rgba(13,17,33,0.45); margin-top: 14px; }
+
+  .form-message { display: none; padding: 14px 16px; border-radius: 10px; font-size: 14px; margin-bottom: 16px; }
+  .form-message.success { display: block; background: #DDDCD8; border: 1px solid #0D1121; }
+  .form-message.error { display: block; background: #DDDCD8; border: 1px solid #C4C3BE; color: rgba(13,17,33,0.7); }
+
+  /* Footer */
+  footer { padding: 40px 0 60px; text-align: center; font-size: 12px; color: rgba(13,17,33,0.45); }
+  footer a { color: rgba(13,17,33,0.6); }
+  footer .legal-note { margin-top: 8px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="mark">Virtu</div>
+    <h1>Transcend your limits.</h1>
+    <p>The first platform to serve both people in a pornography-driven betrayal, with verified truth instead of self-reported recovery, and dignity instead of shame.</p>
+  </div>
+
+  <section class="problem">
+    <h2>The problem</h2>
+    <div class="stats">
+      <div class="stat"><span class="num">$97B</span><span class="lbl">industry driving 1.3B site visits every day</span></div>
+      <div class="stat"><span class="num">56%</span><span class="lbl">of divorces cite pornography as a contributing factor</span></div>
+      <div class="stat"><span class="num">1 in 5</span><span class="lbl">women experience betrayal trauma from a partner's use</span></div>
+    </div>
+  </section>
+
+  <section class="solution">
+    <h2>What Virtu actually is</h2>
+    <p>Existing tools are blunt blockers or generic couples apps. None serve both people, and none verify anything.</p>
+    <p><strong>His recovery data comes from the system, not from him.</strong> He cannot curate or edit it.</p>
+    <p><strong>She is never handed raw data alone.</strong> Virtu prepares her first, then shows her exactly what was recorded.</p>
+    <p>It's the only platform built for both sides of the wound. Not surveillance, not shame. Dignity, for both people.</p>
+  </section>
+
+  <section class="quote">
+    <p>"There was no product that understood both sides of that moment, not his shame, and not my devastation. I built Virtu because that person deserved a tool. And so did he."</p>
+    <div class="who">Kitchie, Founder &amp; Builder, Virtu</div>
+  </section>
+
+  <section class="cta">
+    <h2>Pilot waitlist</h2>
+    <div class="lede">We're opening a small pilot before this goes live.</div>
+    <div class="sub">If this story is yours too, his or hers, join the list. You'll be the first to know when the pilot opens.</div>
+
+    <div id="form-message" class="form-message"></div>
+
+    <form id="pilot-form" action="https://formspree.io/f/mqpzkndo" method="POST">
+      <div class="field-row">
+        <div class="role-select">
+          <div class="role-option">
+            <input type="radio" id="role-him" name="role" value="Him" checked>
+            <label for="role-him">This is his story</label>
+          </div>
+          <div class="role-option">
+            <input type="radio" id="role-her" name="role" value="Her">
+            <label for="role-her">This is her story</label>
+          </div>
+        </div>
+        <input type="email" name="email" placeholder="you@email.com" required>
+        <input type="hidden" name="_subject" value="New Virtu pilot waitlist signup">
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit">Join the pilot waitlist</button>
+      </div>
+    </form>
+
+    <p class="form-note">Your email is only ever used to tell you about pilot access and Virtu updates. Nothing else, no sharing, unsubscribe anytime.</p>
+  </section>
+
+  <footer>
+    <div>kitchieavrillen@gmail.com</div>
+    <div class="legal-note">Privacy Policy &amp; Terms of Use: coming soon at thevirtu.care</div>
+  </footer>
+
+</div>
+
+<script>
+  const form = document.getElementById('pilot-form');
+  const msg = document.getElementById('form-message');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Joining...';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        msg.textContent = "You're on the list. We'll be in touch before the pilot opens.";
+        msg.className = 'form-message success';
+        form.reset();
+        form.style.display = 'none';
+      } else {
+        msg.textContent = "Something didn't go through. Try again, or email kitchieavrillen@gmail.com directly.";
+        msg.className = 'form-message error';
+        btn.disabled = false;
+        btn.textContent = 'Join the pilot waitlist';
+      }
+    } catch (err) {
+      msg.textContent = "Something didn't go through. Try again, or email kitchieavrillen@gmail.com directly.";
+      msg.className = 'form-message error';
+      btn.disabled = false;
+      btn.textContent = 'Join the pilot waitlist';
+    }
+  });
+</script>
+
+</body>
+</html>
